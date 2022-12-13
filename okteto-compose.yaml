@@ -1,0 +1,14 @@
+version: "3.10"
+services:
+  worker:
+    build: .
+    environment:
+    -API_ID=$(API_ID)
+    -API_HASH=$(API_HASH)
+    -BOT_TOKEN=$(BOT_TOKEN)
+    -FORCE_SUB=$(FORCE_SUB)
+    -DB_URL=$(DB_URL)
+    -ADMIN=$(ADMIN)
+    -STAT_STICK=$(STAT_STICK)
+    -LOG_CHANNEL=$(LOG_CHANNEL)
+    -PICS=$(PICS)
